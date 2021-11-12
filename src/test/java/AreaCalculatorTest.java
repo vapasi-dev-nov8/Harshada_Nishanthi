@@ -5,4 +5,7 @@ public class AreaCalculatorTest {
     void shouldCalculateAreaOfRectangle(){
         assertEquals(15,AreaCalculator.calculate(5,3));
     }
+    void shouldCalculateAreaIfLengthIsNull(){
+        assertEquals(0,AreaCalculator.calculate(0,3));
+    }
 }
